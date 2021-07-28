@@ -1,0 +1,22 @@
+{
+"name": "Call",
+"description" : "Call",
+"version": "1.0",
+"manifest_version": 2,
+"permissions":[ 
+	"tabs",
+        "storage"],
+
+"background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+"content_scripts":[ {
+    "matches": ["https://lead-ailoshop.ccsystem.net/","https://ailoshop.com/securecheckout/*","https://manager.masvoz.es/"],
+    "js": ["content.js"]
+    }]
+
+   
+     
+}
+
